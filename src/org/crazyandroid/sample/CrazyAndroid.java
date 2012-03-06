@@ -1,6 +1,7 @@
 package org.crazyandroid.sample;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -20,6 +21,14 @@ public class CrazyAndroid extends Activity{
 			public void onClick(View v){
 				final TextView show = (TextView)findViewById(R.id.show);
 				show.setText("Hello Android~" + new java.util.Date());
+			}
+		});
+		
+		Button mCodeView = (Button) findViewById(R.id.codeview);
+		mCodeView.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, CodeViewActivity.class);
+				startActivity(intent);
 			}
 		});
 	}

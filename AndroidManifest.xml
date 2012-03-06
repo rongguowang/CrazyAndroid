@@ -17,5 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>>
+        <activity android:name="CodeViewActivity"
+            android:label="@string/code_view_activity">
+        </activity>
     </application>
 </manifest>
