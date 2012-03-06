@@ -47,5 +47,14 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mTableLayout = (Button)findViewById(R.id.tablelayout);
+		
+		mTableLayout.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, TableLayoutActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

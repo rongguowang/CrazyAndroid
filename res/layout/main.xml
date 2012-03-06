@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal">
 <TextView android:id="@+id/show"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -21,6 +22,10 @@
     android:layout_height="wrap_content"/>
 <Button android:text="@string/custom_view_button_text"
     android:id="@+id/customview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+<Button android:text="@string/table_layout_button_text"
+    android:id="@+id/tablelayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
 </LinearLayout>

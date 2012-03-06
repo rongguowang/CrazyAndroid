@@ -26,5 +26,8 @@
         <activity android:name="CustomViewActivity"
             android:label="@string/custom_view_activity">
         </activity>
+        <activity android:name="TableLayoutActivity"
+            android:label="@string/table_layout_activity">
+        </activity>
     </application>
 </manifest>

@@ -4,11 +4,17 @@
     <string name="hello">Hello World!</string>
     <string name="app_name">CrazyAndroid</string>
     <string name="button_text">press me</string>
-    <string name="code_view">Start CodeView</string>
+    <string name="code_view">CodeView button</string>
     <string name="code_view_button_text">CodeView button</string>
     <string name="code_view_activity">CodeViewActivity</string>
     <string name="max_view_button_text">MaxView button</string>
     <string name="max_view_activity">MaxViewActivity</string>
     <string name="custom_view_button_text">CustomView button</string>
     <string name="custom_view_activity">CutsomViewActivity</string>
+    <string name="single_button_per_table_row">SingleButton Per Table Row</string>
+    <string name="generic_button">Generic Button</string>
+    <string name="shrink_button">Shrink Button</string>
+    <string name="stretch_button">Stretch Button</string>
+    <string name="table_layout_button_text">Table Layout Button</string>
+    <string name="table_layout_activity">TableLayoutActivity</string>
 </resources>

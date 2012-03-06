@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TableLayout android:id="@+id/TableLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"
+    android:stretchColumns="2">
+    <Button android:id="@+id/ok1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/single_button_per_table_row"/>
+    <TableRow>
+        <Button android:id="@+id/ok2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generic_button"/>
+        <Button android:id="@+id/ok3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_button"/>
+        <Button android:id="@+id/ok4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretch_button"/>
+    </TableRow>
+</TableLayout>
+
+<TableLayout android:id="@+id/TableLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:collapseColumns="1">
+    <Button android:id="@+id/ok5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/single_button_per_table_row"/>
+    <TableRow>
+        <Button android:id="@+id/ok6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generic_button"/>
+        <Button android:id="@+id/ok7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_button"/>
+        <Button android:id="@+id/ok8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretch_button"/>
+    </TableRow>
+</TableLayout>
+
+<TableLayout android:id="@+id/TableLayout03"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1,2">
+    <Button android:id="@+id/ok9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/single_button_per_table_row"/>
+    <TableRow>
+        <Button android:id="@+id/ok10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generic_button"/>
+        <Button android:id="@+id/ok11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_button"/>
+        <Button android:id="@+id/ok12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretch_button"/>
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/ok13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generic_button"/>
+        <Button android:id="@+id/ok14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretch_button"/>
+    </TableRow>    
+</TableLayout>    
+
+</LinearLayout>
