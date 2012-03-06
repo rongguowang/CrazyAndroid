@@ -9,4 +9,6 @@
     <string name="code_view_activity">CodeViewActivity</string>
     <string name="max_view_button_text">MaxView button</string>
     <string name="max_view_activity">MaxViewActivity</string>
+    <string name="custom_view_button_text">CustomView button</string>
+    <string name="custom_view_activity">CutsomViewActivity</string>
 </resources>

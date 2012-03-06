@@ -39,5 +39,13 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mCustomView = (Button)findViewById(R.id.customview);
+		mCustomView.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, CustomViewActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
