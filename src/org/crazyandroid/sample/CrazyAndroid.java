@@ -31,5 +31,13 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mMaxView = (Button)findViewById(R.id.maxview);
+		mMaxView.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, MaxViewActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

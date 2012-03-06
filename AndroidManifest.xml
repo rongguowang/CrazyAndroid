@@ -20,5 +20,8 @@
         <activity android:name="CodeViewActivity"
             android:label="@string/code_view_activity">
         </activity>
+        <activity android:name="MaxViewActivity"
+            android:label="@string/max_view_activity">
+        </activity>
     </application>
 </manifest>

@@ -7,4 +7,6 @@
     <string name="code_view">Start CodeView</string>
     <string name="code_view_button_text">CodeView button</string>
     <string name="code_view_activity">CodeViewActivity</string>
+    <string name="max_view_button_text">MaxView button</string>
+    <string name="max_view_activity">MaxViewActivity</string>
 </resources>
