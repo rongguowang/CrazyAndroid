@@ -17,4 +17,6 @@
     <string name="stretch_button">Stretch Button</string>
     <string name="table_layout_button_text">Table Layout Button</string>
     <string name="table_layout_activity">TableLayoutActivity</string>
+    <string name="frame_layout_button_text">Frame Layout Button</string>
+    <string name="frame_layout_activity">FrameLayoutActivity</string>
 </resources>
