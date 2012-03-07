@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/i_love_java"
+    android:textSize="20pt"/>    
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:text="@string/i_love_java_again_and_again"/>
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"
+    android:autoLink="email"
+    android:text="@string/email_link"/>
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/test_word"
+    android:shadowColor="#0000ff"
+    android:shadowDx="15.0"
+    android:shadowDy="20.0"
+    android:shadowRadius="45.0"
+    android:textColor="#ff0000"
+    android:textSize="25pt"/>
+<TextView android:id="@+id/password"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    android:password="true"/>
+</LinearLayout>

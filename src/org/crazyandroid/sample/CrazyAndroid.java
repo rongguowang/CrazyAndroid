@@ -1,5 +1,8 @@
 package org.crazyandroid.sample;
 
+
+import org.crazyandroid.basic.BasicActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -88,6 +91,13 @@ public class CrazyAndroid extends Activity{
 //				startActivity(intent);
 //			}
 //		});
-		
+
+		Button mBasicLayout = (Button)findViewById(R.id.basicactivity);
+		mBasicLayout.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, BasicActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }

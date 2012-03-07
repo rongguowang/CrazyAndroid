@@ -40,4 +40,8 @@
     android:id="@+id/relativelayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
+<Button android:text="@string/basic_activity"
+    android:id="@+id/basicactivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
 </LinearLayout>

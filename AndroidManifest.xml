@@ -41,5 +41,11 @@
         <activity android:name="AbsoluteLayoutActivity"
             android:label="@string/absolute_layout_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.BasicActivity"
+            android:label="@string/basic_activity">
+        </activity>
+        <activity android:name="org.crazyandroid.basic.TextViewActivity"
+            android:label="@string/text_view_activity">
+        </activity>
     </application>
 </manifest>

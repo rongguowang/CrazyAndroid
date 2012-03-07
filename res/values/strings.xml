@@ -27,4 +27,12 @@
     <string name="user_name">User Name: </string>
     <string name="pass_word">Pass Word: </string>
     <string name="log_in">Log In: </string>
+    <string name="i_love_java">I Love Java</string>
+    <string name="i_love_java_again_and_again">I Love Java I Love Java I Love Java I Love Java </string>
+    <string name="email_link">Email Link new@new.com</string>
+    <string name="test_word">Test Words</string>
+    <string name="basic_button_text">Basic Activity List</string>
+    <string name="basic_activity">BasicActivity</string>
+    <string name="text_view_button_text">TextView Button</string>
+    <string name="text_view_activity">TextViewActivity</string>
 </resources>
