@@ -29,5 +29,8 @@
         <activity android:name="TableLayoutActivity"
             android:label="@string/table_layout_activity">
         </activity>
+        <activity android:name="FrameLayoutActivity"
+            android:label="@string/frame_layout_activity">
+        </activity>
     </application>
 </manifest>

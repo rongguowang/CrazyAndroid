@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <string name="hello">Hello World!</string>
     <string name="app_name">CrazyAndroid</string>
     <string name="button_text">press me</string>
@@ -17,4 +16,6 @@
     <string name="stretch_button">Stretch Button</string>
     <string name="table_layout_button_text">Table Layout Button</string>
     <string name="table_layout_activity">TableLayoutActivity</string>
+    <string name="frame_layout_button_text">Frame Layout Button</string>
+    <string name="frame_layout_activity">FrameLayoutActivity</string>
 </resources>

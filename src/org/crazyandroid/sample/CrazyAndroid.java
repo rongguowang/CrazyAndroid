@@ -56,5 +56,13 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mFrameLayout = (Button)findViewById(R.id.framelayout);
+		mFrameLayout.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, FrameLayoutActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
