@@ -18,4 +18,6 @@
     <string name="table_layout_activity">TableLayoutActivity</string>
     <string name="frame_layout_button_text">Frame Layout Button</string>
     <string name="frame_layout_activity">FrameLayoutActivity</string>
+    <string name="color_light_button_text">Color Light Button</string>
+    <string name="color_light_activity">ColorLightActivity</string>
 </resources>

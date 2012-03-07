@@ -32,5 +32,8 @@
         <activity android:name="FrameLayoutActivity"
             android:label="@string/frame_layout_activity">
         </activity>
+        <activity android:name="ColorLightsActivity"
+            android:label="@string/color_light_activity">
+        </activity>
     </application>
 </manifest>

@@ -64,5 +64,13 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mColorLight = (Button)findViewById(R.id.colorlight);
+		mColorLight.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, ColorLightsActivity.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
