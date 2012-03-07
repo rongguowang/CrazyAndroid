@@ -22,4 +22,9 @@
     <string name="color_light_activity">ColorLightActivity</string>
     <string name="relative_layout_button_text">Relative Layout Button</string>
     <string name="relative_layout_activity">RelativeLayoutActivity</string>
+    <string name="absolute_layout_button_text">Absolute Layout Button</string>
+    <string name="absolute_layout_activity">AbsoluteLayoutActivity</string>
+    <string name="user_name">User Name: </string>
+    <string name="pass_word">Pass Word: </string>
+    <string name="log_in">Log In: </string>
 </resources>

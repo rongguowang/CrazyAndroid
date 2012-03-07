@@ -80,5 +80,14 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+//		Button mAbsoluteLayout = (Button)findViewById(R.id.absolutelayout);
+//		mAbsoluteLayout.setOnClickListener(new OnClickListener() {
+//			public void onClick(View v) {
+//				Intent intent = new Intent(CrazyAndroid.this, AbsoluteLayoutActivity.class);
+//				startActivity(intent);
+//			}
+//		});
+		
 	}
 }
