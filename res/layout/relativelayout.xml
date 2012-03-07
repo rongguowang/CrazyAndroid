@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+<TextView android:id="@+id/center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/icon"/>
+<TextView android:id="@+id/top"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@id/center"
+    android:layout_above="@id/center"
+    android:background="@drawable/icon_picasa_small_unscaled"/>
+<TextView android:id="@+id/bottom"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/center"
+    android:layout_alignLeft="@id/center"
+    android:background="@drawable/indicator_autocrop"/>
+<TextView android:id="@+id/left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@id/center"
+    android:layout_alignTop="@id/center"
+    android:background="@drawable/camera_crop_height"/>
+<TextView android:id="@+id/right"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@id/center"
+    android:layout_alignTop="@id/center"
+    android:background="@drawable/camera_crop_width"/>   
+</RelativeLayout>

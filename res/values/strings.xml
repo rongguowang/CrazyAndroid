@@ -20,4 +20,6 @@
     <string name="frame_layout_activity">FrameLayoutActivity</string>
     <string name="color_light_button_text">Color Light Button</string>
     <string name="color_light_activity">ColorLightActivity</string>
+    <string name="relative_layout_button_text">Relative Layout Button</string>
+    <string name="relative_layout_activity">RelativeLayoutActivity</string>
 </resources>

@@ -72,5 +72,13 @@ public class CrazyAndroid extends Activity{
 				startActivity(intent);
 			}
 		});
+		
+		Button mRelativeLayout = (Button)findViewById(R.id.relativelayout);
+		mRelativeLayout.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, RelativeLayout.class);
+				startActivity(intent);
+			}
+		});
 	}
 }
