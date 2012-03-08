@@ -47,5 +47,8 @@
         <activity android:name="org.crazyandroid.basic.TextViewActivity"
             android:label="@string/text_view_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.LogInActivity"
+            android:label="@string/login_activity">
+        </activity>
     </application>
 </manifest>

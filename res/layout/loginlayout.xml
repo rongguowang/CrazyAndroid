@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_table"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical">
+<TableRow android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/user_name"
+        android:textSize="10pt"
+        android:background="@layout/bg_border"/>
+    <EditText android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name_hint"/>
+</TableRow>    
+<TableRow android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pass_word"
+        android:textSize="10pt"
+        android:background="@layout/bg_border"/>
+    <EditText android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:hint=""/>
+</TableRow>
+<TableRow android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:textSize="10pt"
+        android:background="@layout/bg_border"/>
+    <EditText android:id="@+id/phone_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:hint=""/>
+</TableRow>
+<Button android:id="@+id/log_in" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/log_in"/>
+</TableLayout>

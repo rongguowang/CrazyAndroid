@@ -21,5 +21,13 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mLogin = (Button)findViewById(R.id.login);
+    	mLogin.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, LogInActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
