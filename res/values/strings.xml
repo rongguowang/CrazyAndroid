@@ -35,4 +35,6 @@
     <string name="basic_activity">BasicActivity</string>
     <string name="text_view_button_text">TextView Button</string>
     <string name="text_view_activity">TextViewActivity</string>
+    <string name="text_with_border">Text With Border</string>
+    <string name="text_with_image">Text With Image</string>
 </resources>

@@ -30,4 +30,12 @@
     android:layout_height="wrap_content"
     android:text="@string/hello"
     android:password="true"/>
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/text_with_border"
+    android:background="@layout/bg_border"/>
+<TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/text_with_image"
+    android:drawableLeft="@drawable/icon"/>
 </LinearLayout>
