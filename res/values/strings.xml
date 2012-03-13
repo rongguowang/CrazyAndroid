@@ -41,4 +41,6 @@
     <string name="text_with_image">Text With Image</string>
     <string name="login_button_text">Log In Button</string>
     <string name="login_activity">LogInActivity</string>
+    <string name="image_button_text">Image Button</string>
+    <string name="image_button_activity">Image Button Activity</string>
 </resources>

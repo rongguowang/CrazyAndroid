@@ -50,5 +50,8 @@
         <activity android:name="org.crazyandroid.basic.LogInActivity"
             android:label="@string/login_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.ImageButtonActivity"
+            android:label="@string/image_button_activity">
+        </activity>
     </application>
 </manifest>
