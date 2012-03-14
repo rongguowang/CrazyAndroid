@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex" />
+        <RadioGroup android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"/>
+            <RadioButton android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female" />
+        </RadioGroup>
+    </TableRow>    
+    <TableRow>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/liked_color" />
+        <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+            <CheckBox android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue_color"
+                android:checked="true"/>
+            <CheckBox android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red_color"/>
+            <CheckBox android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green_color" />
+        </LinearLayout>    
+    </TableRow>
+</TableLayout>

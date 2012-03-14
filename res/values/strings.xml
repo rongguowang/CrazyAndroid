@@ -45,4 +45,13 @@
     <string name="image_button_activity">Image Button Activity</string>
     <string name="patch9_button_text">patch9 Button</string>
     <string name="patch9_activity">Patch9 Activity</string>
+    <string name="sex">Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="liked_color">Liked Color :</string>
+    <string name="red_color">Red</string>
+    <string name="blue_color">Blue</string>
+    <string name="green_color">Green</string>
+    <string name="radio_check_button_text">Radio Check Button</string>
+    <string name="radio_check_activity">Radio Check Activity</string>
 </resources>

@@ -56,5 +56,8 @@
         <activity android:name="org.crazyandroid.basic.Patch9Activity"
             android:label="@string/patch9_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.RadioCheckActivity"
+            android:label="@string/radio_check_activity">
+        </activity>
     </application>
 </manifest>

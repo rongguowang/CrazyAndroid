@@ -44,5 +44,12 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	Button mRadioCheckButton = (Button)findViewById(R.id.radio_check_button);
+    	mRadioCheckButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, RadioCheckActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
