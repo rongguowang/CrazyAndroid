@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ToggleButton android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/togglebutton"
+        android:textOn="@string/vertical"
+        android:textOff="@string/horizontal"
+        android:checked="true"/>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/testlinearlayout">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generic_button"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_button" />
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stretch_button" />
+    </LinearLayout>
+</LinearLayout>

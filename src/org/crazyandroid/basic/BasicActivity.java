@@ -51,5 +51,12 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	Button mToggleButton = (Button)findViewById(R.id.toggle_button);
+    	mToggleButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, ToggleButtonActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
