@@ -37,5 +37,12 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	Button mPatch9Button = (Button)findViewById(R.id.patch9_button);
+    	mPatch9Button.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, Patch9Activity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

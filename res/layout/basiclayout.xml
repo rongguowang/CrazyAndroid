@@ -15,4 +15,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/image_button_text"/>
+<Button android:id="@+id/patch9_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/patch9_button_text"/>
 </LinearLayout>

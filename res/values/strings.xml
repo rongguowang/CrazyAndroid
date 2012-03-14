@@ -43,4 +43,6 @@
     <string name="login_activity">LogInActivity</string>
     <string name="image_button_text">Image Button</string>
     <string name="image_button_activity">Image Button Activity</string>
+    <string name="patch9_button_text">patch9 Button</string>
+    <string name="patch9_activity">Patch9 Activity</string>
 </resources>

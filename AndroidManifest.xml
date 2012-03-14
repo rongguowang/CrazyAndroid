@@ -53,5 +53,8 @@
         <activity android:name="org.crazyandroid.basic.ImageButtonActivity"
             android:label="@string/image_button_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.Patch9Activity"
+            android:label="@string/patch9_activity">
+        </activity>
     </application>
 </manifest>
