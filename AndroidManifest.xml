@@ -61,5 +61,7 @@
         </activity>
         <activity android:name="org.crazyandroid.basic.ToggleButtonActivity"
             android:label="@string/toggle_button_activity"/>
+        <activity android:name="org.crazyandroid.basic.ClockActivity"
+            android:label="@string/clock_activity" />
     </application>
 </manifest>

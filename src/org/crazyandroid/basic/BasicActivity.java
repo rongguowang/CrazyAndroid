@@ -58,5 +58,13 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mClockButton = (Button)findViewById(R.id.clock_button);
+    	mClockButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, ClockActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

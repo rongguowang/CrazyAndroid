@@ -58,4 +58,6 @@
     <string name="vertical">Vertical</string>
     <string name="toggle_button_text">Toggle Button</string>
     <string name="toggle_button_activity">Toggle Button Activity</string>
+    <string name="clock_button_text">Clock Button</string>
+    <string name="clock_activity">Clock Activity</string>
 </resources>
