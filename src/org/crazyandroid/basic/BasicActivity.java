@@ -66,5 +66,13 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mImageButton2 = (Button)findViewById(R.id.image_button);
+    	mImageButton2.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, ImageActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

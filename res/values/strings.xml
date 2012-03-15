@@ -60,4 +60,8 @@
     <string name="toggle_button_activity">Toggle Button Activity</string>
     <string name="clock_button_text">Clock Button</string>
     <string name="clock_activity">Clock Activity</string>
+    <string name="increase_alpha">Increase Alpha</string>
+    <string name="decrease_alpha">Decrease Alpha</string>
+    <string name="next">Next </string>
+    <string name="image_activity">Image Activity</string>
 </resources>

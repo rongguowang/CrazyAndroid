@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button android:id="@+id/increasealpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_alpha" />
+        <Button android:id="@+id/decreasealpha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_alpha" />
+        <Button android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next" />
+    </LinearLayout>
+    <ImageView android:id="@+id/image1"
+        android:layout_width="320dp"
+        android:layout_height="360dp"
+        android:background="#0000ff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shuangta"
+        android:contentDescription="" />
+    <ImageView android:id="@+id/image2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#0000ff"
+        android:layout_marginTop="2dp"
+        android:contentDescription="" />
+</LinearLayout>
