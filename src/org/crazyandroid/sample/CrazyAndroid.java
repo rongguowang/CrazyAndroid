@@ -1,6 +1,7 @@
 package org.crazyandroid.sample;
 
 
+import org.crazyandroid.advance.AdvanceActivity;
 import org.crazyandroid.basic.BasicActivity;
 
 import android.app.Activity;
@@ -96,6 +97,14 @@ public class CrazyAndroid extends Activity{
 		mBasicLayout.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent(CrazyAndroid.this, BasicActivity.class);
+				startActivity(intent);
+			}
+		});
+		
+		Button mAdvanceLayout = (Button)findViewById(R.id.advance_activity);
+		mAdvanceLayout.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(CrazyAndroid.this, AdvanceActivity.class);
 				startActivity(intent);
 			}
 		});

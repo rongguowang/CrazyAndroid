@@ -44,4 +44,8 @@
     android:id="@+id/basicactivity"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"/>
+<Button android:id="@+id/advance_activity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/advance_activity_button_text"/>
 </LinearLayout>

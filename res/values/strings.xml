@@ -64,4 +64,9 @@
     <string name="decrease_alpha">Decrease Alpha</string>
     <string name="next">Next </string>
     <string name="image_activity">Image Activity</string>
+    <string name="advance_activity_button_text">Advance Activity Button</string>
+    <string name="advance_activity">Advance Activity</string>
+    <string name="autocomplete_button_text">AutoComplete Button</string>
+    <string name="autocomplete_activity">AutoComplete Activity</string>
+    <string name="loved_book">Loved book:</string>
 </resources>

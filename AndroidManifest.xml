@@ -65,5 +65,9 @@
             android:label="@string/clock_activity" />
         <activity android:name="org.crazyandroid.basic.ImageActivity"
             android:label="@string/image_activity"></activity>
+        <activity android:name="org.crazyandroid.advance.AdvanceActivity"
+            android:label="@string/advance_activity"/>
+        <activity android:name="org.crazyandroid.advance.AutocompleteActivity"
+            android:label="@string/autocomplete_activity" />
     </application>
 </manifest>
