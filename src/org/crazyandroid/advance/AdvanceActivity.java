@@ -28,5 +28,13 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mTimeDate = (Button)findViewById(R.id.time_date_button);
+    	mTimeDate.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, TimeDateActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

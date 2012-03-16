@@ -71,5 +71,7 @@
             android:label="@string/autocomplete_activity" />
         <activity android:name="org.crazyandroid.advance.SpinnerActivity"
             android:label="@string/spinner_activity"/>
+        <activity android:name="org.crazyandroid.advance.TimeDateActivity"
+            android:label="@string/time_date_activity"/>
     </application>
 </manifest>

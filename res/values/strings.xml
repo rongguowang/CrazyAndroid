@@ -70,5 +70,8 @@
     <string name="autocomplete_activity">AutoComplete Activity</string>
     <string name="loved_book">Loved book:</string>
     <string name="spinner_button_text">Spinner Button</string>
+    <string name="time_book">Time of buying this book: </string>
     <string name="spinner_activity">Spinner Activity</string>
+    <string name="time_date_button_text">TimeDateButton</string>
+    <string name="time_date_activity">TimeDate Activity</string>
 </resources>
