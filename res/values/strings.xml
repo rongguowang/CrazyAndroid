@@ -69,4 +69,6 @@
     <string name="autocomplete_button_text">AutoComplete Button</string>
     <string name="autocomplete_activity">AutoComplete Activity</string>
     <string name="loved_book">Loved book:</string>
+    <string name="spinner_button_text">Spinner Button</string>
+    <string name="spinner_activity">Spinner Activity</string>
 </resources>

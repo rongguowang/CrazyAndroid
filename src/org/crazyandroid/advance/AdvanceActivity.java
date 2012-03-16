@@ -20,5 +20,13 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mSpinnerButton = (Button)findViewById(R.id.spinner_button);
+    	mSpinnerButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, SpinnerActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

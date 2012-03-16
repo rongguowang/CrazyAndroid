@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="books">
+        <item>crazy Android</item>
+        <item>crazy Java</item>
+        <item>crazy JSP</item>
+        <item>crazy XML</item>
+    </string-array>
+</resources>

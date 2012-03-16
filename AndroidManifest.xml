@@ -69,5 +69,7 @@
             android:label="@string/advance_activity"/>
         <activity android:name="org.crazyandroid.advance.AutocompleteActivity"
             android:label="@string/autocomplete_activity" />
+        <activity android:name="org.crazyandroid.advance.SpinnerActivity"
+            android:label="@string/spinner_activity"/>
     </application>
 </manifest>
