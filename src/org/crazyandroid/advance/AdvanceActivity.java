@@ -36,5 +36,21 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mPolygon = (Button)findViewById(R.id.polygon_button);
+    	mPolygon.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, PolygonActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+    	
+    	Button mGl2 = (Button)findViewById(R.id.gl2_button);
+    	mGl2.setOnClickListener( new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, GL2.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

@@ -73,5 +73,9 @@
             android:label="@string/spinner_activity"/>
         <activity android:name="org.crazyandroid.advance.TimeDateActivity"
             android:label="@string/time_date_activity"/>
+        <activity android:name="org.crazyandroid.advance.PolygonActivity"
+            android:label="@string/polygon_activity" />
+        <activity android:name="org.crazyandroid.advance.GL2"
+            android:label="@string/gl2_activity" />
     </application>
 </manifest>

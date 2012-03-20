@@ -74,4 +74,8 @@
     <string name="spinner_activity">Spinner Activity</string>
     <string name="time_date_button_text">TimeDateButton</string>
     <string name="time_date_activity">TimeDate Activity</string>
+    <string name="polygon_button_text">Polygon Button</string>
+    <string name="polygon_activity">Polygon Activity</string>
+    <string name="gl2_button_text">GL2 Button</string>
+    <string name="gl2_activity">GL2 Activity</string>
 </resources>

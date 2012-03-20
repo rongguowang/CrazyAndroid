@@ -15,4 +15,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/time_date_button_text"/>
+    <Button android:id="@+id/polygon_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/polygon_button_text" />
+    <Button android:id="@+id/gl2_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gl2_button_text" />
 </LinearLayout>
