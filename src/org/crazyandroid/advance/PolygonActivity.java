@@ -15,14 +15,18 @@ import java.nio.ByteBuffer;
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
+import org.crazyandroid.customview.TaperRenderer;
+
 public class PolygonActivity extends Activity {
 	private GLSurfaceView glView;
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	
     	glView = new GLSurfaceView(this);
-    	PolygonRenderer polygon = new PolygonRenderer();
-    	glView.setRenderer(polygon);
+//    	PolygonRenderer polygon = new PolygonRenderer();
+//    	glView.setRenderer(polygon);
+    	TaperRenderer taper = new TaperRenderer();
+    	glView.setRenderer(taper);
     	setContentView(glView);
     	glView.requestFocus();
     }
