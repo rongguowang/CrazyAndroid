@@ -78,4 +78,7 @@
     <string name="polygon_activity">Polygon Activity</string>
     <string name="gl2_button_text">GL2 Button</string>
     <string name="gl2_activity">GL2 Activity</string>
+    <string name="finished_progress">Finished Progress</string>
+    <string name="progress_activity">Progress Activity</string>
+    <string name="progress_button_text">Progress Button</string>
 </resources>

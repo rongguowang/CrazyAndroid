@@ -96,6 +96,7 @@ public class TaperRenderer implements Renderer{
     	gl.glLoadIdentity();
     	gl.glTranslatef(-0.6f, 0.0f, -1.5f);
     	gl.glVertexPointer(3, GL10.GL_FLOAT, 0, mTaperVerticesBuffer);
+    	gl.glRotatef(90.f, 1.0f, 1.0f, 1.0f);
 //    	gl.glColorPointer(4, GL10.GL_FIXED, 0, mTaperColorBuffer);
     	gl.glDrawElements(GL10.GL_TRIANGLE_STRIP, mTaperIndexBuffer.remaining(), GL10.GL_UNSIGNED_BYTE, mTaperIndexBuffer);
     	

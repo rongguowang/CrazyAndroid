@@ -52,5 +52,13 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mProgress = (Button)findViewById(R.id.progress_button);
+    	mProgress.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, ProgressActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
