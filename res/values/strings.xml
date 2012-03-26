@@ -81,4 +81,8 @@
     <string name="finished_progress">Finished Progress</string>
     <string name="progress_activity">Progress Activity</string>
     <string name="progress_button_text">Progress Button</string>
+    <string name="progress2_button1_text">Show Progress Bar</string>
+    <string name="progress2_button2_text">hide Progress Bar</string>
+    <string name="progress_activity_2">Progress Activity 2</string>
+    <string name="progress_button_2_text">Progress Button 2</string>
 </resources>

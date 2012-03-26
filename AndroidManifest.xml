@@ -79,5 +79,7 @@
             android:label="@string/gl2_activity" />
         <activity android:name="org.crazyandroid.advance.ProgressActivity"
             android:label="@string/progress_activity" />
+        <activity android:name="org.crazyandroid.advance.TitleProgressActivity"
+            android:label="@string/progress_activity_2" />
     </application>
 </manifest>
