@@ -31,4 +31,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/progress_button_2_text" />
+    <Button android:id="@+id/seekbar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seekbar_button_text" />
 </LinearLayout>

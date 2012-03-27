@@ -85,4 +85,6 @@
     <string name="progress2_button2_text">hide Progress Bar</string>
     <string name="progress_activity_2">Progress Activity 2</string>
     <string name="progress_button_2_text">Progress Button 2</string>
+    <string name="seekbar_button_text">Seekbar Button</string>
+    <string name="seekbar_activity">SeekBar Activity</string>
 </resources>

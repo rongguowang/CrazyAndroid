@@ -68,5 +68,13 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mSeekBar = (Button)findViewById(R.id.seekbar_button);
+    	mSeekBar.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, SeekbarActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

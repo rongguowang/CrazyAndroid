@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <ImageView android:id="@+id/image1"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:contentDescription="" 
+        android:src="@drawable/lijiang"/>
+    <SeekBar android:id="@+id/seekbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255"
+        android:thumb="@drawable/icon"/>
+    <RatingBar android:id="@+id/ratingbar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:max="255"
+        android:progress="255"
+        android:stepSize="0.5"/>
+</LinearLayout>

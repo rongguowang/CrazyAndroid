@@ -81,5 +81,7 @@
             android:label="@string/progress_activity" />
         <activity android:name="org.crazyandroid.advance.TitleProgressActivity"
             android:label="@string/progress_activity_2" />
+        <activity android:name="org.crazyandroid.advance.SeekbarActivity"
+            android:label="@string/seekbar_activity" />
     </application>
 </manifest>
