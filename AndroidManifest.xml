@@ -41,6 +41,8 @@
         <activity android:name="AbsoluteLayoutActivity"
             android:label="@string/absolute_layout_activity">
         </activity>
+        <activity android:name="org.crazyandroid.basic.ScrollViewActivity"
+            android:label="@string/scroll_activity" />
         <activity android:name="org.crazyandroid.basic.BasicActivity"
             android:label="@string/basic_activity">
         </activity>

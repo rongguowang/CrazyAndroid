@@ -91,4 +91,7 @@
     <string name="contact_name_2"> Parry 153 7053 2411</string>
     <string name="tabhost_activity">TabHost Activity</string>
     <string name="tabhost_button_text">TabHost Button</string>
+    <string name="many_scrollview">Many ScrollView Many ScrollView Many ScrollView Many ScrollView </string>
+    <string name="scroll_button_text">Scroll Button</string>
+    <string name="scroll_activity">Scroll Activity</string>
 </resources>

@@ -74,5 +74,13 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mScrollButton = (Button)findViewById(R.id.scroll_button);
+    	mScrollButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, ScrollViewActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
