@@ -87,4 +87,8 @@
     <string name="progress_button_2_text">Progress Button 2</string>
     <string name="seekbar_button_text">Seekbar Button</string>
     <string name="seekbar_activity">SeekBar Activity</string>
+    <string name="contact_name_1"> Joey 159 6860 8213</string>
+    <string name="contact_name_2"> Parry 153 7053 2411</string>
+    <string name="tabhost_activity">TabHost Activity</string>
+    <string name="tabhost_button_text">TabHost Button</string>
 </resources>

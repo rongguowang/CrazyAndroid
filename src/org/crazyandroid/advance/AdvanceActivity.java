@@ -76,5 +76,13 @@ public class AdvanceActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mTabHost = (Button)findViewById(R.id.tabhost_button);
+    	mTabHost.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, TabHostActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
