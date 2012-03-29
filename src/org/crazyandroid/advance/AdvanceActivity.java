@@ -1,5 +1,6 @@
 package org.crazyandroid.advance;
 
+import org.crazyandroid.adapter.AdapterActivity;
 import org.crazyandroid.sample.R;
 import android.app.Activity;
 import android.os.Bundle;
@@ -81,6 +82,15 @@ public class AdvanceActivity extends Activity{
     	mTabHost.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
     			Intent intent = new Intent(AdvanceActivity.this, TabHostActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+    	
+    	Button mAdapter = (Button)findViewById(R.id.adapter_button);
+    	
+    	mAdapter.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdvanceActivity.this, AdapterActivity.class);
     			startActivity(intent);
     		}
     	});

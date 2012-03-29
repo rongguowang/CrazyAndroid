@@ -87,5 +87,9 @@
             android:label="@string/seekbar_activity" />
         <activity android:name="org.crazyandroid.advance.TabHostActivity"
             android:label="@string/tabhost_activity" />
+        <activity android:name="org.crazyandroid.adapter.AdapterActivity"
+            android:label="@string/adapter_activity" />
+        <activity android:name="org.crazyandroid.adapter.ListAdapterActivity"
+            android:label="@string/list_adapter_activity" />
     </application>
 </manifest>

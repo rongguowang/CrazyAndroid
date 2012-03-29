@@ -94,4 +94,8 @@
     <string name="many_scrollview">Many ScrollView Many ScrollView Many ScrollView Many ScrollView </string>
     <string name="scroll_button_text">Scroll Button</string>
     <string name="scroll_activity">Scroll Activity</string>
+    <string name="adapter_button_text">Adapter Button</string>
+    <string name="adapter_activity">Adapter Activity</string>
+    <string name="listadapter_button_text">ListAdapter Button</string>
+    <string name="list_adapter_activity">ListAdapter Activity</string>
 </resources>
