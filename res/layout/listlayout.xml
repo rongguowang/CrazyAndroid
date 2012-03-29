@@ -3,12 +3,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <ListView android:layout_width="wrap_content"
+    <?ListView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:entries="@array/books"
-        android:divider="@drawable/red" />
+        android:divider="@drawable/red" / ?>
     <ListView android:id="@+id/list1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:divider="@drawable/green" />
+    <ImageView android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" />
+    <TextView android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" />
 </LinearLayout>
