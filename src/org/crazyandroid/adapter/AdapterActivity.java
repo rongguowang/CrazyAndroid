@@ -21,5 +21,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mExpandable = (Button)findViewById(R.id.expandablelist_button);
+    	mExpandable.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ExpandableListActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

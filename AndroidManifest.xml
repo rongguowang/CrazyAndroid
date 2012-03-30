@@ -91,5 +91,7 @@
             android:label="@string/adapter_activity" />
         <activity android:name="org.crazyandroid.adapter.ListAdapterActivity"
             android:label="@string/list_adapter_activity" />
+        <activity android:name="org.crazyandroid.adapter.ExpandableListActivity"
+            android:label="@string/expandablelist_activity" />
     </application>
 </manifest>
