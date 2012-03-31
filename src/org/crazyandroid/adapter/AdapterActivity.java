@@ -37,5 +37,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mGallery = (Button)findViewById(R.id.gallery_button);
+    	mGallery.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, GalleryActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

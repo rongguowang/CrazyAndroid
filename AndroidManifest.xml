@@ -95,5 +95,7 @@
             android:label="@string/expandablelist_activity" />
         <activity android:name="org.crazyandroid.adapter.GridActivity"
             android:label="@string/grid_activity" />
+        <activity android:name="org.crazyandroid.adapter.GalleryActivity"
+            android:label="@string/gallery_activity" />
     </application>
 </manifest>

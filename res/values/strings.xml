@@ -102,4 +102,6 @@
     <string name="expandablelist_activity">ExpandableList Activity</string>
     <string name="grid_activity">Grid Activity</string>
     <string name="grid_button_text">Grid Button</string>
+    <string name="gallery_activity">Gallery Activity</string>
+    <string name="gallery_button_text">Gallery Button</string>
 </resources>
