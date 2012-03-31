@@ -93,5 +93,7 @@
             android:label="@string/list_adapter_activity" />
         <activity android:name="org.crazyandroid.adapter.ExpandableListActivity"
             android:label="@string/expandablelist_activity" />
+        <activity android:name="org.crazyandroid.adapter.GridActivity"
+            android:label="@string/grid_activity" />
     </application>
 </manifest>

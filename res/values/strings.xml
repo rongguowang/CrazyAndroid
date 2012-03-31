@@ -100,4 +100,6 @@
     <string name="list_adapter_activity">ListAdapter Activity</string>
     <string name="expandablelist_button_text">ExpandableList Button</string>
     <string name="expandablelist_activity">ExpandableList Activity</string>
+    <string name="grid_activity">Grid Activity</string>
+    <string name="grid_button_text">Grid Button</string>
 </resources>

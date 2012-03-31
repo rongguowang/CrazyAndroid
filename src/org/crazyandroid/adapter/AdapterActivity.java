@@ -29,5 +29,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mGrid =(Button)findViewById(R.id.grid_button);
+    	mGrid.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, GridActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
