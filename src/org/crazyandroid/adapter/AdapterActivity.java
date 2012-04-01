@@ -45,5 +45,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mDialog = (Button)findViewById(R.id.dialog_button1);
+    	mDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, DialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

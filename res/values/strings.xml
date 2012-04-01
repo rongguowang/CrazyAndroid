@@ -104,4 +104,8 @@
     <string name="grid_button_text">Grid Button</string>
     <string name="gallery_activity">Gallery Activity</string>
     <string name="gallery_button_text">Gallery Button</string>
+    <string name="text_hint">some text here</string>
+    <string name="ok">OK</string>
+    <string name="dialog_button_text_1">Dialog Button1</string>
+    <string name="dialog_activity">Dialog Activity</string>
 </resources>

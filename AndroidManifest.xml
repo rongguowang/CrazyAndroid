@@ -97,5 +97,7 @@
             android:label="@string/grid_activity" />
         <activity android:name="org.crazyandroid.adapter.GalleryActivity"
             android:label="@string/gallery_activity" />
+        <activity android:name="org.crazyandroid.adapter.DialogActivity"
+            android:label="@string/dialog_activity" />
     </application>
 </manifest>
