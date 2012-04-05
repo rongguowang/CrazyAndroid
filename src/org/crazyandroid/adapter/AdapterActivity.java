@@ -61,5 +61,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mSingleChoiceDialog = (Button)findViewById(R.id.singledialog_button);
+    	mSingleChoiceDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, SingleChoiceDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

@@ -110,4 +110,6 @@
     <string name="dialog_activity">Dialog Activity</string>
     <string name="listdialog_activity">ListDialog Activity</string>
     <string name="listdialog_button_text">ListDialog Button</string>
+    <string name="singledialog_button_text">SingleDialog Button</string>
+    <string name="singledialog_activity">SingleDialog Activity</string>
 </resources>
