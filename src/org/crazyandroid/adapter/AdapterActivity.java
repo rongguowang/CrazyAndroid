@@ -69,5 +69,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mMultiDialog = (Button)findViewById(R.id.multidialog_button);
+    	mMultiDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, MultiChoiceDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

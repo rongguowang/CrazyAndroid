@@ -103,5 +103,7 @@
             android:label="@string/listdialog_activity" />
         <activity android:name="org.crazyandroid.adapter.SingleChoiceDialogActivity"
             android:label="@string/singledialog_activity" />
+        <activity android:name="org.crazyandroid.adapter.MultiChoiceDialogActivity"
+            android:label="@string/multidialog_activity" />
     </application>
 </manifest>

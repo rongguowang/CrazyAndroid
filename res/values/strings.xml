@@ -112,4 +112,6 @@
     <string name="listdialog_button_text">ListDialog Button</string>
     <string name="singledialog_button_text">SingleDialog Button</string>
     <string name="singledialog_activity">SingleDialog Activity</string>
+    <string name="multidialog_activity">MultiDialog Actvity</string>
+    <string name="multidialog_button_text">MultiDialog Button</string>
 </resources>
