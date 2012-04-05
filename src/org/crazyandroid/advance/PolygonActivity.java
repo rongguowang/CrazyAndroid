@@ -92,6 +92,7 @@ class PolygonRenderer implements Renderer {
 	IntBuffer rectColorBuffer;
 	FloatBuffer rectDataBuffer2;
 	FloatBuffer pentacleBuffer;
+	private float rotate;
 	
 	public PolygonRenderer() {
 		byteBuffer = ByteBuffer.allocateDirect(triangleData.length * 8);
@@ -140,11 +141,13 @@ class PolygonRenderer implements Renderer {
 		
 		gl.glLoadIdentity();
 		gl.glTranslatef(0.0f, 0.0f, -6.0f);
+		gl.glRotatef(rotate, 0, 0, 0);
 		gl.glVertexPointer(3, GL10.GL_FLOAT, 0, triangleDataBuffer);
 		gl.glColorPointer(4, GL10.GL_FIXED, 0, triangleColorBuffer);
 		gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 3);
 		
 		gl.glFinish();
 		gl.glDisableClientState(GL10.GL_VERTEX_ARRAY);
+		rotate = rotate + 1;
 	}
 }

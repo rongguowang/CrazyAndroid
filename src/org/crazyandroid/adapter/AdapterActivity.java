@@ -53,5 +53,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mListDialog = (Button)findViewById(R.id.listdialog_button);
+    	mListDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ListDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

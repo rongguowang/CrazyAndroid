@@ -108,4 +108,6 @@
     <string name="ok">OK</string>
     <string name="dialog_button_text_1">Dialog Button1</string>
     <string name="dialog_activity">Dialog Activity</string>
+    <string name="listdialog_activity">ListDialog Activity</string>
+    <string name="listdialog_button_text">ListDialog Button</string>
 </resources>

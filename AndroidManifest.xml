@@ -99,5 +99,7 @@
             android:label="@string/gallery_activity" />
         <activity android:name="org.crazyandroid.adapter.DialogActivity"
             android:label="@string/dialog_activity" />
+        <activity android:name="org.crazyandroid.adapter.ListDialogActivity"
+            android:label="@string/listdialog_activity" />
     </application>
 </manifest>

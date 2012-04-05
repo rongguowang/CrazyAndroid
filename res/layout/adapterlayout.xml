@@ -23,4 +23,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dialog_button_text_1" />
+    <Button android:id="@+id/listdialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listdialog_button_text" />
 </LinearLayout>
