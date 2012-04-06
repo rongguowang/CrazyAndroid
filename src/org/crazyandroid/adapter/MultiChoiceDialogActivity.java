@@ -1,5 +1,9 @@
 package org.crazyandroid.adapter;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import org.crazyandroid.sample.R;
 
 import android.os.Bundle;
@@ -33,19 +37,44 @@ public class MultiChoiceDialogActivity extends Activity{
     		b.setIcon(R.drawable.icon);
     		b.setTitle("multi choice dialog");
     		final boolean[] checkStatus = {false, false, false};
-    		b.setMultiChoiceItems(new String[] {"red", "blue", "green"}, checkStatus, new DialogInterface.OnMultiChoiceClickListener() {
-				String result = "Color liked is : ";
+    		final String[] mColors = {" red", " blue", " green"};
+    		b.setMultiChoiceItems(mColors , checkStatus, new DialogInterface.OnMultiChoiceClickListener() {
+
+				List<String> mList = new ArrayList<String>();
 				public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-					
+					String result = "Color liked is : ";
+					System.out.println(which + " is checked: " + isChecked);
+					mText.setText(null);
 					if(isChecked) {
-                        if(which == 0){
-                        	result += " red";
-                        }else if(which == 1){
-                        	result += " blue";
-                        }else if(which == 2){
-                        	result += " green";
-                        }else{}
+						if(!mList.contains((Object)mColors[which])){
+							System.out.println("mList add");
+						    mList.add(mColors[which]);	
+						}
 					}
+					if(!isChecked) {
+						if(mList.contains((Object)mColors[which])){
+							System.out.println("mList remove");
+							mList.remove((Object)mColors[which]);
+						}
+					}
+					System.out.println("mList Size : " + mList.size());
+					String tmp = new String();
+					for(int i = 0; i < mList.size(); i++) {
+						if(!mList.get(i).toString().equals(null)) {
+							tmp += mList.get(i).toString();
+						}
+					}
+					
+					result += tmp;
+//					if(isChecked) {
+//                        if(which == 0){
+//                        	result += " red";
+//                        }else if(which == 1){
+//                        	result += " blue";
+//                        }else if(which == 2){
+//                        	result += " green";
+//                        }else{}
+//					}
 					mText.setText(result);
 				}
 			});
