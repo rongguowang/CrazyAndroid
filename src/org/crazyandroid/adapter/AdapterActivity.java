@@ -77,5 +77,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	Button mCustomDialog = (Button)findViewById(R.id.customdialog_button);
+    	mCustomDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, CustomDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+    	
     }
 }

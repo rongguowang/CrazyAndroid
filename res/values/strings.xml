@@ -114,4 +114,6 @@
     <string name="singledialog_activity">SingleDialog Activity</string>
     <string name="multidialog_activity">MultiDialog Actvity</string>
     <string name="multidialog_button_text">MultiDialog Button</string>
+    <string name="customdialog_button_text">CustomDialog Button</string>
+    <string name="customdialog_activity">CustomDialog Activity</string>
 </resources>
