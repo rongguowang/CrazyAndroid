@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+    <TableRow>
     <Button android:id="@+id/listadapter_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -11,6 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/expandablelist_button_text" />
+    </TableRow>
+    <TableRow>
     <Button android:id="@+id/grid_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,6 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/gallery_button_text" />
+    </TableRow>
+    <TableRow>
     <Button android:id="@+id/dialog_button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,6 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/listdialog_button_text" />
+    </TableRow>
+    <TableRow>
     <Button android:id="@+id/singledialog_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,6 +42,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/multidialog_button_text" />
+    </TableRow>
+    <TableRow>
     <Button android:id="@+id/customdialog_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,8 +52,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/logindialog_button_text" />
+    </TableRow>
+    <TableRow>
     <Button android:id="@+id/popupwindow_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/popupwindow_button_text" />
-</LinearLayout>
+    <Button android:id="@+id/datedialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datedialog_button_text" />
+    </TableRow>
+</TableLayout>

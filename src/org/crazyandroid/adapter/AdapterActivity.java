@@ -100,5 +100,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mDateDialog = (Button)findViewById(R.id.datedialog_button);
+    	mDateDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, DateDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

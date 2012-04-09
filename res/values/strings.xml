@@ -120,4 +120,8 @@
     <string name="logindialog_button_text">LoginDialog Button</string>
     <string name="popupwindow_activity">PopUpWindow Activity</string>
     <string name="popupwindow_button_text">PopUpWindow Button</string>
+    <string name="datedialog_button_text">DateDialog Button</string>
+    <string name="datedialog_activity">DateDialog Activity</string>
+    <string name="datebn">Date Button</string>
+    <string name="timebn">Time Button</string>
 </resources>
