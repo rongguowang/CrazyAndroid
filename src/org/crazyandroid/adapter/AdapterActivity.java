@@ -85,5 +85,13 @@ public class AdapterActivity extends Activity{
     		}
     	});
     	
+    	Button mLogin = (Button)findViewById(R.id.logindialog_button);
+    	mLogin.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, LoginDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+    	
     }
 }

@@ -116,4 +116,6 @@
     <string name="multidialog_button_text">MultiDialog Button</string>
     <string name="customdialog_button_text">CustomDialog Button</string>
     <string name="customdialog_activity">CustomDialog Activity</string>
+    <string name="logindialog_activity">LoginDialog Activity</string>
+    <string name="logindialog_button_text">LoginDialog Button</string>
 </resources>

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" 
     android:id="@+id/login_table"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" 
-    android:orientation="horizontal">
-<TableRow android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+<TableRow>
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/user_name"
@@ -16,8 +15,7 @@
         android:layout_height="wrap_content"
         android:hint="@string/user_name_hint"/>
 </TableRow>    
-<TableRow android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<TableRow>
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pass_word"
@@ -29,8 +27,7 @@
         android:password="true"
         android:hint=""/>
 </TableRow>
-<TableRow android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+<TableRow>
     <TextView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/phone_number"
