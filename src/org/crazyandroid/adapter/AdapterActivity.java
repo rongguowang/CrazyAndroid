@@ -92,6 +92,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
-    	
+
+    	Button mPopUp = (Button)findViewById(R.id.popupwindow_button);
+    	mPopUp.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, PopupWindowActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

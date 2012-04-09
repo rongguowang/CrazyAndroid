@@ -108,6 +108,9 @@
         <activity android:name="org.crazyandroid.adapter.CustomDialogActivity"
             android:label="@string/customdialog_activity" />
         <activity android:name="org.crazyandroid.adapter.LoginDialogActivity"
-            android:label="@string/logindialog_activity" />
+            android:label="@string/logindialog_activity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="org.crazyandroid.adapter.PopupWindowActivity"
+            android:label="@string/popupwindow_activity" />
     </application>
 </manifest>
