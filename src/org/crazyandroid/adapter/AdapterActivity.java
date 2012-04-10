@@ -108,5 +108,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mProgressDialog = (Button)findViewById(R.id.progressdialog_button);
+    	mProgressDialog.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ProgressDialogActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

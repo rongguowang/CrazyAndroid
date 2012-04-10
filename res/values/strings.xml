@@ -124,4 +124,6 @@
     <string name="datedialog_activity">DateDialog Activity</string>
     <string name="datebn">Date Button</string>
     <string name="timebn">Time Button</string>
+    <string name="progressdialog_activity">ProgressDialog Activity</string>
+    <string name="progressdialog_button_text">ProgressDialog Button</string>
 </resources>
