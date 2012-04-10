@@ -124,5 +124,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mNotification = (Button)findViewById(R.id.notification_button);
+    	mNotification.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, NotificationActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
