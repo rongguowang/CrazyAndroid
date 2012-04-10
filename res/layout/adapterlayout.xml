@@ -68,5 +68,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/progressdialog_button_text" />
+        <Button android:id="@+id/toast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/toast_button_text" />
     </TableRow>
 </TableLayout>

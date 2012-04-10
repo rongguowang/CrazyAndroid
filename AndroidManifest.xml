@@ -116,5 +116,7 @@
             android:label="@string/datedialog_activity" />
         <activity android:name="org.crazyandroid.adapter.ProgressDialogActivity"
             android:label="@string/progressdialog_activity" />
+        <activity android:name="org.crazyandroid.adapter.ToastActivity"
+            android:label="@string/toast_activity" />
     </application>
 </manifest>

@@ -116,5 +116,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mToast = (Button)findViewById(R.id.toast_button);
+    	mToast.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ToastActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

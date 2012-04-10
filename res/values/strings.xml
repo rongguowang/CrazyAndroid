@@ -126,4 +126,6 @@
     <string name="timebn">Time Button</string>
     <string name="progressdialog_activity">ProgressDialog Activity</string>
     <string name="progressdialog_button_text">ProgressDialog Button</string>
+    <string name="toast_activity">Toast Activity</string>
+    <string name="toast_button_text">Toast Button</string>
 </resources>
