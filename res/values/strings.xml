@@ -130,4 +130,6 @@
     <string name="toast_button_text">Toast Button</string>
     <string name="notification_activity">Notification Activity</string>
     <string name="notification_button_text">Notification Button</string>
+    <string name="menu_activity">Menu Activity</string>
+    <string name="menu_button_text">Menu Button</string>
 </resources>

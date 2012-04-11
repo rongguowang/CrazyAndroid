@@ -121,7 +121,7 @@
             android:label="@string/toast_activity" />
         <activity android:name="org.crazyandroid.adapter.NotificationActivity"
             android:label="@string/notification_activity"/>
-
+        <activity android:name="org.crazyandroid.adapter.MenuActivity"
+            android:label="@string/menu_activity" />
     </application>
-
 </manifest>
