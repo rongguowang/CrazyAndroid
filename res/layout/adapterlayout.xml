@@ -83,4 +83,10 @@
             android:layout_height="wrap_content"
             android:text="@string/menu_button_text" />
     </TableRow>
+    <TableRow>
+        <Button android:id="@+id/checkablemenu_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkablemenu_button_text"/>
+    </TableRow>
 </TableLayout>

@@ -132,4 +132,6 @@
     <string name="notification_button_text">Notification Button</string>
     <string name="menu_activity">Menu Activity</string>
     <string name="menu_button_text">Menu Button</string>
+    <string name="checkablemenu_activity">CheckableMenu Activity</string>
+    <string name="checkablemenu_button_text">CheckableMenu Button</string>
 </resources>

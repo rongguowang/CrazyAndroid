@@ -140,5 +140,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mCheckableMenu = (Button)findViewById(R.id.checkablemenu_button);
+    	mCheckableMenu.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, CheckableMenuActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

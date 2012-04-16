@@ -123,5 +123,7 @@
             android:label="@string/notification_activity"/>
         <activity android:name="org.crazyandroid.adapter.MenuActivity"
             android:label="@string/menu_activity" />
+        <activity android:name="org.crazyandroid.adapter.CheckableMenuActivity"
+            android:label="@string/checkablemenu_activity" />
     </application>
 </manifest>
