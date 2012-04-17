@@ -3,9 +3,11 @@ package org.crazyandroid.adapter;
 import org.crazyandroid.sample.R;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.SubMenu;
 import android.widget.EditText;
 import android.widget.Button;
@@ -44,6 +46,28 @@ public class CheckableMenuActivity extends Activity{
     	items[1] = colourMenu.add(0, BLUE, 0, mColourNames[1]);
     	items[2] = colourMenu.add(0, GREEN, 0, mColourNames[2]);
     	items[2].setAlphabeticShortcut('u');
+    	
+    	SubMenu progMenu = menu.addSubMenu("start programe");
+    	progMenu.setIcon(R.drawable.tools);
+    	progMenu.setHeaderIcon(R.drawable.tools);
+    	progMenu.setHeaderTitle("choose the programe you like: ");
+    	MenuItem item = progMenu.add("check JavaEE");
+    	final Intent intent = new Intent(CheckableMenuActivity.this, DialogActivity.class);
+    	/**
+    	 * actually, the setIntent will only work when there is no call back method to handle
+    	 * all the menu pressed action. otherwise, you need to handle it yourself, unless you
+    	 * do that, the setIntent(intent) will not work.
+    	 */
+    	item.setIntent(intent);
+    	item.setOnMenuItemClickListener(new OnMenuItemClickListener () {
+
+			@Override
+			public boolean onMenuItemClick(MenuItem item) {
+				startActivity(intent);
+				return true;
+			}
+    		
+    	});
     	
     	return super.onCreateOptionsMenu(menu);
     }
