@@ -125,5 +125,7 @@
             android:label="@string/menu_activity" />
         <activity android:name="org.crazyandroid.adapter.CheckableMenuActivity"
             android:label="@string/checkablemenu_activity" />
+        <activity android:name="org.crazyandroid.adapter.ContextMenuActivity"
+            android:label="@string/contextmenu_activity" />
     </application>
 </manifest>

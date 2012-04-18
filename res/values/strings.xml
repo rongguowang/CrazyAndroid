@@ -134,4 +134,6 @@
     <string name="menu_button_text">Menu Button</string>
     <string name="checkablemenu_activity">CheckableMenu Activity</string>
     <string name="checkablemenu_button_text">CheckableMenu Button</string>
+    <string name="contextmenu_activity">ContextMenu Activity</string>
+    <string name="contextmenu_button_text">ContextMenu Button</string>
 </resources>

@@ -148,5 +148,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mContextMenu = (Button)findViewById(R.id.contextmenu_button);
+    	mContextMenu.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ContextMenuActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
