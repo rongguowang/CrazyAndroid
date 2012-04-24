@@ -156,5 +156,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mPlane = (Button)findViewById(R.id.plane_button);
+    	mPlane.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, PlaneActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

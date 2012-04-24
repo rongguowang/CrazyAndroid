@@ -127,5 +127,7 @@
             android:label="@string/checkablemenu_activity" />
         <activity android:name="org.crazyandroid.adapter.ContextMenuActivity"
             android:label="@string/contextmenu_activity" />
+        <activity android:name="org.crazyandroid.adapter.PlaneActivity"
+            android:label="@string/plane_activity" />
     </application>
 </manifest>

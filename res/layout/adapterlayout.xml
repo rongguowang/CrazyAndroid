@@ -93,4 +93,10 @@
             android:layout_height="wrap_content"
             android:text="@string/contextmenu_button_text" />
     </TableRow>
+    <TableRow>
+        <Button android:id="@+id/plane_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plane_button_text" />
+    </TableRow>
 </TableLayout>
