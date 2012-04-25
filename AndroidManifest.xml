@@ -129,5 +129,7 @@
             android:label="@string/contextmenu_activity" />
         <activity android:name="org.crazyandroid.adapter.PlaneActivity"
             android:label="@string/plane_activity" />
+        <activity android:name="org.crazyandroid.adapter.ClickableButtonActivity"
+            android:label="@string/clickablebutton_activity"/>
     </application>
 </manifest>

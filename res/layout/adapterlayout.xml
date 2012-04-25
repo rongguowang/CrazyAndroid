@@ -98,5 +98,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/plane_button_text" />
+        <Button android:id="@+id/clickable_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clickable_button_text" />
     </TableRow>
 </TableLayout>

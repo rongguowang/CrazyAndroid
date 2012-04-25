@@ -164,5 +164,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mClickableButton = (Button)findViewById(R.id.clickable_button);
+    	mClickableButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ClickableButtonActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
