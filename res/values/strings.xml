@@ -140,4 +140,6 @@
     <string name="plane_button_text">Plane Button</string>
     <string name="clickable_button_text">Clickable Button</string>
     <string name="clickablebutton_activity">Clickable Button Activity</string>
+    <string name="config_activity">Configuration Activity</string>
+    <string name="config_button_text">Config Button</string>
 </resources>

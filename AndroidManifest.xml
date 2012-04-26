@@ -131,5 +131,7 @@
             android:label="@string/plane_activity" />
         <activity android:name="org.crazyandroid.adapter.ClickableButtonActivity"
             android:label="@string/clickablebutton_activity"/>
+        <activity android:name="org.crazyandroid.adapter.ConfigActivity"
+            android:label="@string/config_activity" />
     </application>
 </manifest>

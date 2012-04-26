@@ -172,5 +172,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mConfigButton = (Button)findViewById(R.id.config_button);
+    	mConfigButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, ConfigActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }
