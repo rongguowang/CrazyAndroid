@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.Button;
+import android.widget.Toast;
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 public class ConfigActivity extends Activity{
 	EditText ori = null;
@@ -15,6 +17,7 @@ public class ConfigActivity extends Activity{
 	EditText touch = null;
 	EditText mnc = null;
 	Button ok = null;
+	Button change = null;
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.configlayout);
@@ -38,5 +41,26 @@ public class ConfigActivity extends Activity{
     			touch.setText(touchName);
     		}
     	});
+    	
+    	change = (Button)findViewById(R.id.change);
+    	change.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Configuration cfg = getResources().getConfiguration();
+    			if (cfg.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+    				ConfigActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+    			}
+    			
+    			if (cfg.orientation == Configuration.ORIENTATION_PORTRAIT) {
+    				ConfigActivity.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+    			}
+    		}
+    	});
     }
+    
+	public void onConfigurationChanged(Configuration config) {
+		super.onConfigurationChanged(config);
+		
+		String screen = config.orientation == Configuration.ORIENTATION_LANDSCAPE ? "landscape" : "vertical";
+		Toast.makeText(this, "orientation changed to: " + screen, Toast.LENGTH_LONG).show();
+	}
 }

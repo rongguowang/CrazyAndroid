@@ -142,4 +142,5 @@
     <string name="clickablebutton_activity">Clickable Button Activity</string>
     <string name="config_activity">Configuration Activity</string>
     <string name="config_button_text">Config Button</string>
+    <string name="changeori">ChangeOrientation</string>
 </resources>
