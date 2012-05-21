@@ -180,5 +180,13 @@ public class AdapterActivity extends Activity{
     			startActivity(intent);
     		}
     	});
+    	
+    	Button mHandler = (Button)findViewById(R.id.handler_button);
+    	mHandler.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(AdapterActivity.this, HandlerActivity.class);
+    			startActivity(intent);
+    		}
+    	});
     }
 }

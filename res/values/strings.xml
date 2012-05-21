@@ -143,4 +143,6 @@
     <string name="config_activity">Configuration Activity</string>
     <string name="config_button_text">Config Button</string>
     <string name="changeori">ChangeOrientation</string>
+    <string name="handler_button_text">Handler Button</string>
+    <string name="handler_activity">Handler Activity</string>
 </resources>

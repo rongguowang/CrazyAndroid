@@ -135,5 +135,7 @@
         <activity android:name="org.crazyandroid.adapter.ConfigActivity"
             android:label="@string/config_activity" 
             android:configChanges="orientation"/>
+        <activity android:name="org.crazyandroid.adapter.HandlerActivity"
+            android:label="@string/handler_activity" />
     </application>
 </manifest>
