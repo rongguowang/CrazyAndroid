@@ -1,7 +1,7 @@
 package org.crazyandroid.basic;
 
 import org.crazyandroid.sample.R;
-
+import org.crazyandroid.launcher.LauncherListActivity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -79,6 +79,14 @@ public class BasicActivity extends Activity {
     	mScrollButton.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
     			Intent intent = new Intent(BasicActivity.this, ScrollViewActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+    	
+    	Button mExpandableButton = (Button)findViewById(R.id.expandablelist2_button);
+    	mExpandableButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, LauncherListActivity.class);
     			startActivity(intent);
     		}
     	});

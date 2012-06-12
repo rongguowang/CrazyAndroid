@@ -137,5 +137,11 @@
             android:configChanges="orientation"/>
         <activity android:name="org.crazyandroid.adapter.HandlerActivity"
             android:label="@string/handler_activity" />
+        <activity android:name="org.crazyandroid.launcher.LauncherListActivity"
+            android:label="@string/launcherlist_activity" />
+        <activity android:name="org.crazyandroid.launcher.ExpandableActivity"
+            android:label="@string/expandablelist2_activity" />
+        <activity android:name="org.crazyandroid.launcher.PreferencesActivity"
+            android:label="@string/preferences_activity" />
     </application>
 </manifest>

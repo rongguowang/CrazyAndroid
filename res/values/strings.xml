@@ -145,4 +145,8 @@
     <string name="changeori">ChangeOrientation</string>
     <string name="handler_button_text">Handler Button</string>
     <string name="handler_activity">Handler Activity</string>
+    <string name="expandablelist2_button_text">ExpandableList Button</string>
+    <string name="expandablelist2_activity">Expandable Activity</string>
+    <string name="launcherlist_activity">LauncherList Activity</string>
+    <string name="preferences_activity">Preferences Activity</string>
 </resources>

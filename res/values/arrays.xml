@@ -6,4 +6,8 @@
         <item>crazy JSP</item>
         <item>crazy XML</item>
     </string-array>
+    <string-array name="gender_name_list">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
 </resources>
