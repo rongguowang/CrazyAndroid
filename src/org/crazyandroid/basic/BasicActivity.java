@@ -2,6 +2,9 @@ package org.crazyandroid.basic;
 
 import org.crazyandroid.sample.R;
 import org.crazyandroid.launcher.LauncherListActivity;
+import org.crazyandroid.launcher.PreferedQueryActivity;
+import org.crazyandroid.launcher.ViewDragActivity;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -13,7 +16,7 @@ public class BasicActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.basiclayout);
-    	
+
     	Button mTextView = (Button)findViewById(R.id.textview);
     	mTextView.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -21,7 +24,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mLogin = (Button)findViewById(R.id.login);
     	mLogin.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -29,7 +32,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mImageButton = (Button)findViewById(R.id.imagebutton);
     	mImageButton.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -58,7 +61,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mClockButton = (Button)findViewById(R.id.clock_button);
     	mClockButton.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -66,7 +69,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mImageButton2 = (Button)findViewById(R.id.image_button);
     	mImageButton2.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -74,7 +77,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mScrollButton = (Button)findViewById(R.id.scroll_button);
     	mScrollButton.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -82,7 +85,7 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
-    	
+
     	Button mExpandableButton = (Button)findViewById(R.id.expandablelist2_button);
     	mExpandableButton.setOnClickListener(new OnClickListener() {
     		public void onClick(View v) {
@@ -90,5 +93,20 @@ public class BasicActivity extends Activity {
     			startActivity(intent);
     		}
     	});
+
+    	Button mViewdragButton = (Button)findViewById(R.id.viewdrag_button);
+    	mViewdragButton.setOnClickListener(new OnClickListener() {
+    		public void onClick(View v) {
+    			Intent intent = new Intent(BasicActivity.this, ViewDragActivity.class);
+    			startActivity(intent);
+    		}
+    	});
+        Button mPreferedButton = (Button)findViewById(R.id.preferedquery_button);
+        mPreferedButton.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(BasicActivity.this, PreferedQueryActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

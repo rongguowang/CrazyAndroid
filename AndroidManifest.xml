@@ -143,5 +143,9 @@
             android:label="@string/expandablelist2_activity" />
         <activity android:name="org.crazyandroid.launcher.PreferencesActivity"
             android:label="@string/preferences_activity" />
+        <activity android:name="org.crazyandroid.launcher.ViewDragActivity"
+            android:label="@string/viewdrag_activity"/>
+        <activity android:name="org.crazyandroid.launcher.PreferedQueryActivity"
+            android:label="@string/preferedquery_activity"/>
     </application>
 </manifest>

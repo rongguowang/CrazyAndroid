@@ -149,4 +149,8 @@
     <string name="expandablelist2_activity">Expandable Activity</string>
     <string name="launcherlist_activity">LauncherList Activity</string>
     <string name="preferences_activity">Preferences Activity</string>
+    <string name="viewdrag_button_text">DragView Button</string>
+    <string name="viewdrag_activity">DragView Activity</string>
+    <string name="preferedquery_button_text">Prefered Query</string>
+    <string name="preferedquery_activity">Prefered Activity</string>
 </resources>

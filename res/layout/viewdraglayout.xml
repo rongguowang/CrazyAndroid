@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView android:id="@+id/textview4"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@layout/bg_border"
+        android:layout_alignParentBottom="true"/>
+    <TextView android:id="@+id/textview3" 
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:background="@layout/bg_green"
+        android:layout_above="@id/textview4"/>
+</RelativeLayout>

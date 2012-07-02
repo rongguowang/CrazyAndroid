@@ -53,4 +53,14 @@
     android:layout_height="wrap_content"
     android:text="@string/expandablelist2_button_text" />
 </TableRow>
+<TableRow>
+<Button android:id="@+id/viewdrag_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/viewdrag_button_text"/>
+<Button android:id="@+id/preferedquery_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/preferedquery_button_text"/>
+</TableRow>
 </TableLayout>

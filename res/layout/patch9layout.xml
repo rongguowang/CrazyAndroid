@@ -6,7 +6,7 @@
     <Button android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/generic_button"
-        android:background="@drawable/icon" />
+        android:background="@drawable/close2" />
     <ImageButton android:layout_width="fill_parent"
         android:contentDescription="@string/image_button_text"
         android:layout_height="wrap_content"
