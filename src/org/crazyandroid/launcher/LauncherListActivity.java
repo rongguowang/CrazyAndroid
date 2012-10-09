@@ -6,9 +6,11 @@ import android.widget.ArrayAdapter;
 import android.content.Intent;
 public class LauncherListActivity extends LauncherActivity {
 	String[] names = {"Property Activity",
-			"StarCraft Activity",};
+			"StarCraft Activity",
+            "ActivityForResult"};
 	Class<?>[] clazzs = {PreferencesActivity.class,
-			ExpandableActivity.class,};
+			ExpandableActivity.class,
+            ActivityForResult.class,};
 	
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);

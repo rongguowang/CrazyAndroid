@@ -147,5 +147,9 @@
             android:label="@string/viewdrag_activity"/>
         <activity android:name="org.crazyandroid.launcher.PreferedQueryActivity"
             android:label="@string/preferedquery_activity"/>
+        <activity android:name="org.crazyandroid.launcher.ActivityForResult"
+            android:label="@string/activity_for_result"/>
+        <activity android:name="org.crazyandroid.launcher.SelectCityActivity"
+            android:label="@string/select_city"/>
     </application>
 </manifest>

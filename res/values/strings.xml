@@ -153,4 +153,6 @@
     <string name="viewdrag_activity">DragView Activity</string>
     <string name="preferedquery_button_text">Prefered Query</string>
     <string name="preferedquery_activity">Prefered Activity</string>
+    <string name="select_city">Select City</string>
+    <string name="activity_for_result">ActivityForResult</string>
 </resources>
