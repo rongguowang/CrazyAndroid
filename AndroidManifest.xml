@@ -151,5 +151,9 @@
             android:label="@string/activity_for_result"/>
         <activity android:name="org.crazyandroid.launcher.SelectCityActivity"
             android:label="@string/select_city"/>
+        <activity android:name="org.crazyandroid.launcher.ResultActivity"
+            android:label="@string/result_activity"/>
+        <activity android:name="org.crazyandroid.launcher.ComponentStartActivity"
+            android:label="@string/componentstart_activity"/>
     </application>
 </manifest>

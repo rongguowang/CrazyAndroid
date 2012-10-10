@@ -155,4 +155,6 @@
     <string name="preferedquery_activity">Prefered Activity</string>
     <string name="select_city">Select City</string>
     <string name="activity_for_result">ActivityForResult</string>
+    <string name="componentstart_activity">ComponentStartActivity</string>
+    <string name="result_activity">Result Activity</string>
 </resources>

@@ -7,10 +7,12 @@ import android.content.Intent;
 public class LauncherListActivity extends LauncherActivity {
 	String[] names = {"Property Activity",
 			"StarCraft Activity",
-            "ActivityForResult"};
+            "ActivityForResult",
+            "ComponentStartActivity"};
 	Class<?>[] clazzs = {PreferencesActivity.class,
 			ExpandableActivity.class,
-            ActivityForResult.class,};
+            ActivityForResult.class,
+            ComponentStartActivity.class};
 	
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
