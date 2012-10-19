@@ -157,4 +157,6 @@
     <string name="activity_for_result">ActivityForResult</string>
     <string name="componentstart_activity">ComponentStartActivity</string>
     <string name="result_activity">Result Activity</string>
+    <string name="viewcontact">View Contact</string>
+    <string name="viewcontact_activity">ViewContact Activity</string>
 </resources>

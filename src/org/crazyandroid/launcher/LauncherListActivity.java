@@ -8,11 +8,13 @@ public class LauncherListActivity extends LauncherActivity {
 	String[] names = {"Property Activity",
 			"StarCraft Activity",
             "ActivityForResult",
-            "ComponentStartActivity"};
+            "ComponentStartActivity",
+            "ViewContactActivity",};
 	Class<?>[] clazzs = {PreferencesActivity.class,
 			ExpandableActivity.class,
             ActivityForResult.class,
-            ComponentStartActivity.class};
+            ComponentStartActivity.class,
+            ViewContactActivity.class};
 	
     public void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);

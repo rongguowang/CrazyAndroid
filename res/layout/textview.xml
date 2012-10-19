@@ -6,5 +6,10 @@
 
     <TextView android:id="@+id/textview1"
         android:layout_width="match_parent"
-        android:layout_height="100dip"/>
+        android:layout_height="100dip"
+        android:background="@color/red"/>
+    <TextView android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@color/green"/>
 </LinearLayout>

@@ -4,10 +4,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <EditText android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <Button android:id="@+id/button1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <Button android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="@string/viewcontact"/>
 </LinearLayout>
