@@ -1,0 +1,75 @@
+
+mycp/mycp2.c,25
+int main(void)main5,43
+
+mycp/mycp.c,57
+#define BUFFSIZE BUFFSIZE5,43
+int main(void)main7,66
+
+mycp/mycp3.c,76
+#define BUFFSIZE BUFFSIZE4,41
+int main(int argc, char * argv[])main6,64
+
+mypid/myid.c,44
+int main(int argc, char * argv[])main3,22
+
+mypid/mypid.c,25
+int main(void)main3,22
+
+mypid/myerror.c,44
+int main(int argc, char * argv[])main4,41
+
+mypid/mysh.c,113
+#define MAXLINE MAXLINE7,91
+int main(int argc, char *argv[])main9,112
+void sig_int(int signo)sig_int47,780
+
+myls/myls.c,44
+int main(int argc, char * argv[])main4,42
+
+inputseek/inputseek.c,43
+int main(int argc, char *argv[])main3,22
+
+inputseek/nullseek.c,158
+char buf1[] = "abcdefghij";buf14,41
+char buf2[] = "ABCDEFGHIJ";buf25,69
+#define FILE_LENGTH FILE_LENGTH7,98
+int main(int argc, char *argv[])main9,125
+
+util.c,83
+char * path_alloc(int * sizep)path_alloc4,20
+long open_max(void)open_max49,761
+
+sysconf/sysconf.c,188
+int main(int argc, char *argv[])main9,171
+static void pr_sysconf(char *mesg, int name)pr_sysconf206,5300
+static void pr_pathconf(char *msg, char *patch, int name)pr_pathconf226,5637
+
+thread/threadmutex.c,394
+struct foo {foo4,43
+     int f_count;f_count5,56
+     pthread_mutex_t f_lock;f_lock6,74
+struct foo * fp;fp9,107
+struct foo * foo_alloc(void)foo_alloc11,125
+void foo_hold(struct foo * fp, char * arg)foo_hold25,378
+void foo_rele(struct foo * fp, char *arg)foo_rele33,588
+void * thr_fn1(void *arg)thr_fn147,929
+void * thr_fn2(void *arg)thr_fn257,1109
+int main(void)main67,1290
+
+thread/threadclean.c,145
+void cleanup(void *arg)cleanup4,43
+void * thr_fn1(void *arg)thr_fn19,115
+void * thr_fn2(void *arg)thr_fn222,437
+int main(void)main35,793
+
+thread/threadjoin.c,107
+void * thr_fn1(void *arg)thr_fn14,43
+void * thr_fn2(void *arg)thr_fn211,137
+int main(void)main17,234
+
+fileIO/filelabel.c,161
+void set_fl(int fd, int flags)set_fl5,61
+int get_fl(int fd)get_fl21,424
+void check_fl(int val)check_fl32,590
+int main(int argc, char *argv[])main66,1195

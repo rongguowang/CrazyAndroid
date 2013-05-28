@@ -1,0 +1,4 @@
+write only
+val & flags = 0  O_RDONLY & O_RDWR = 0
+write only
+usage: a.out <descriptor#>
