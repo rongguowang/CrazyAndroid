@@ -1,10 +1,18 @@
 #include "../apue.h"
 #include <fcntl.h>
 #include <unistd.h>
+#include <malloc.h>
 
 #define BUFFSIZE 4096
 
 char buff[] = "ABCDEFGHIJ";
+
+typedef struct holePos
+{
+     int holeNum;
+     int holeStartPos;
+     int holeFinishPos;
+} holePos, *holePosPtr;
 
 int usage1()
 {
@@ -101,6 +109,29 @@ back2:
 	  close(fdwrite);
      return ;
 }
+
+void holeCreatInFile()
+{
+     int holeNum;
+     holePos *hole;
+     int i;
+     printf("how many holes do you want to create in the file:\n");
+     scanf("%d", &holeNum);
+     printf("holeNum = %d\n", holeNum);
+
+     if (holeNum <= 0)
+	  return;
+     hole = (struct holePos *)malloc(sizeof (struct holePos) * holeNum);
+     for (i = 0; i < holeNum; i++)
+     {
+	  hole[i].holeNum = i + 1;
+	  printf("input %d hole start point and finish point\n", i);
+	  scanf("%d,%d", &hole[i].holeStartPos, &hole[i].holeFinishPos);
+	  printf("%d hole start:%d\tfinish:%d\n", hole[i].holeNum, 
+		 hole[i].holeStartPos, hole[i].holeFinishPos);
+     }
+
+}
 int main(int argc, char *argv[])
 {
      char i;
@@ -130,6 +161,9 @@ int main(int argc, char *argv[])
 	  printf("input file size:\n");
 	  scanf("%d", &n);
 	  inputSizeWrite(argv[1], n);
+	  break;
+     case 'h':
+	  holeCreatInFile();
 	  break;
      default:
 	  break;
