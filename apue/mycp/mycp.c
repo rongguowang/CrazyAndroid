@@ -21,14 +21,58 @@ int usage1()
      printf("\t[b] read buffer and write buffer to copy\n");
      printf("\t[c] read char and write char to copy\n");
      printf("\t[r] write input size of data into the file\n");
-     printf("\t[i] ignore holes in the read file\n");
+     printf("\t[i] not ignore holes copy in the read file\n");
      printf("\t[h] create hole in input file\n");
      return getchar();
 }
 
-void ignoreHoleCopy(char read[], char write[])
+void holeCopy(char read2[], char write2[])
 {
+     int fdread, fdwrite;
+     int c;
+     int i;
 
+     if ((fdread = open(read2, O_RDONLY)) < 0)
+     {
+	  printf("open read file %s error!\n", read2);
+	  goto back4;
+     }
+
+     if ((fdwrite = open(write2, O_WRONLY|O_CREAT, RWRWRW)) < 0)
+     {
+	  printf("open write file %s error\n", write2);
+	  goto back4;
+     }
+
+
+     i = 0;
+     while((read(fdread, &c, 1)) > 0)
+     {
+	  i++;
+	  if (c == 0)
+	  {
+	       if (lseek(fdwrite,1,SEEK_CUR) == -1)
+	       {
+		    printf("write error!\n");
+		    goto back4;
+	       }
+	  } else 
+	  {
+	       if (write(fdwrite, &c, 1) != 1)
+	       {
+		    printf("write error!\n");
+		    goto back4;
+	       }
+	  }
+     }
+
+
+back4:
+     if (fdread)
+	  close(fdread);
+     if (fdwrite)
+	  close(fdwrite);
+     return ;
 }
 
 void charCopy(char read1[], char write1[])
@@ -42,7 +86,7 @@ void charCopy(char read1[], char write1[])
 	  printf("fdread open fail! quit!\n");
 	  goto back;
      }
-     if ((fdwrite = open(write1, O_WRONLY|O_CREAT|O_TRUNC, RWRWRW)) < 0)
+     if ((fdwrite = open(write1, O_WRONLY|O_CREAT, RWRWRW)) < 0)
      {
 	  printf("fdwrite open fail! quit!\n");
 	  goto back;
@@ -110,11 +154,59 @@ back2:
      return ;
 }
 
-void holeCreatInFile()
+void write2File(char file[], int startPos, int finishPos)
+{
+     int fd;
+     int len = 0;
+     int writeNo = 10;
+     int leftLen = 0;
+     int totalLen = finishPos - startPos;
+
+     printf("write2File: startPos = %d\t finishPos = %d\n", startPos, finishPos);
+     if (startPos < 0 || finishPos < startPos)
+	  return;
+
+     if ((fd = open(file, O_WRONLY | O_CREAT, RWRWRW)) < 0)
+     {
+	  printf("open %s error!\n", file);
+	  goto back3;
+     }
+
+     if (lseek(fd, startPos, SEEK_SET) == -1)
+     {
+	  printf("seek %s error!\n", file);
+	  goto back3;
+     }
+
+     leftLen = finishPos - startPos;
+     while((leftLen <= totalLen) && (leftLen > 0))
+     {
+	  if (write(fd, &buff, writeNo) == writeNo)
+	  {
+	       len += writeNo;
+	       leftLen = totalLen - len;
+	       if (leftLen < writeNo)
+	       {
+		    writeNo = leftLen;
+	       }
+	  } else {
+	       printf("wirte error!\n");
+	       goto back3;
+	  }
+     }
+
+back3:
+     if (fd)
+	  close(fd);
+     return;
+}
+
+void holeCreatInFile(char file[])
 {
      int holeNum;
      holePos *hole;
      int i;
+     int defaultStart = 0;
      printf("how many holes do you want to create in the file:\n");
      scanf("%d", &holeNum);
      printf("holeNum = %d\n", holeNum);
@@ -131,6 +223,14 @@ void holeCreatInFile()
 		 hole[i].holeStartPos, hole[i].holeFinishPos);
      }
 
+     for (i = 0; i < holeNum; i++)
+     {
+	  defaultStart = (i == 0)?0:hole[i-1].holeFinishPos;
+	  write2File(file, defaultStart, hole[i].holeStartPos);
+     }
+     write2File(file, hole[i - 1].holeFinishPos, (hole[i - 1].holeFinishPos + 10));
+
+     return ;
 }
 int main(int argc, char *argv[])
 {
@@ -152,7 +252,7 @@ int main(int argc, char *argv[])
 	  stdin2out();
 	  break;
      case 'i':
-	  ignoreHoleCopy(argv[1], argv[2]);
+	  holeCopy(argv[1], argv[2]);
 	  break;
      case 'c':
 	  charCopy(argv[1], argv[2]);
@@ -163,7 +263,7 @@ int main(int argc, char *argv[])
 	  inputSizeWrite(argv[1], n);
 	  break;
      case 'h':
-	  holeCreatInFile();
+	  holeCreatInFile(argv[1]);
 	  break;
      default:
 	  break;
