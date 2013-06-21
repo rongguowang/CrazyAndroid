@@ -17,8 +17,13 @@ static long nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;
 #define FTW_DNR 3
 #define FTW_NS 4
 
-#define PATH_MAX_GUESS 1024
+#define PATH_MAX_GUESS 1023
+#define DIR_MAX_NAME 255
 
+char buff[] = "abcdefghij";
+char cwd[80];
+char wholepath[1024];
+char * ptr2 = wholepath;
 static char * fullpath;
 
 static int myftw(char *pathname, Myfunc  *func)
@@ -41,7 +46,9 @@ static int dopath(Myfunc * func)
      DIR *dp;
      int ret;
      char * ptr;
-     
+
+
+     printf("%s\n", fullpath);
      if (lstat(fullpath, &statbuf) < 0)
      {
 	  return (func(fullpath, &statbuf, FTW_NS));
@@ -65,7 +72,6 @@ static int dopath(Myfunc * func)
 
      while((dirp = readdir(dp)) != NULL)
      {
-
 	  if ((strcmp(dirp->d_name, ".") == 0) || (strcmp(dirp->d_name, "..") == 0))
 	       continue;
 	  strcpy(ptr, dirp->d_name);
@@ -113,6 +119,7 @@ static int myfunc(const char *pathname, const struct stat * statptr, int type)
 
      return 0;
 }
+
 int printpath(char *path)
 {
      DIR *dp ;
@@ -133,6 +140,89 @@ back2:
 	  closedir(dp);
      return;
 }
+int creatLongNameDir()
+{
+     char * dirname;
+     int nameLen = 0;
+     int copycount = 10;
+
+     dirname = (char *)malloc(DIR_MAX_NAME);
+
+     while (nameLen < DIR_MAX_NAME)
+     {
+	  strncpy((dirname + nameLen), buff, copycount);
+	  nameLen += 10;
+	  if ((DIR_MAX_NAME - nameLen) < copycount)
+	  {
+	       copycount = DIR_MAX_NAME - nameLen - 1;
+	  }
+     }
+     dirname[DIR_MAX_NAME - 1] = 0;
+//     printf("dirname length = %d\t dirname = %s\n", strlen(dirname), dirname);
+
+     mkdir(dirname, RWXRWXRWX);
+     if (dirname)
+	  free(dirname);
+     return ;
+}
+
+int walkpath(char *path)
+{
+     struct stat statbuf;
+     struct dirent *dirp;
+     DIR *dp;
+     int ret;
+
+     if ((PATH_MAX_GUESS - strlen(wholepath)) <= (DIR_MAX_NAME * 2))
+	  return ;
+
+//     printf("%s\n", wholepath);
+     if (lstat(path, &statbuf) < 0)
+     {
+	  printf("lstat %s error, return!\n", wholepath);
+	  goto back3;
+     }
+
+     if (S_ISDIR(statbuf.st_mode) == 0)
+     {
+	  return ;
+     }
+     strncpy(ptr2, path, strlen(path));
+     ptr2[strlen(path)] = 0;
+
+     chdir(path);
+//     chroot(path);
+     getcwd(cwd,sizeof(cwd));
+     printf("%s\n", cwd);
+
+     creatLongNameDir();
+
+     ptr2 = ptr2 + strlen(path);
+     *ptr2++ = '/';
+     *ptr2 = 0;
+
+     if ((dp = opendir(".")) == NULL)
+     {
+	  printf("opendir %s error, return!\n", path);
+	  goto back3;
+     }
+
+     while((dirp = readdir(dp)) != NULL)
+     {
+//	  printf("%s\n", dirp->d_name);
+	  if ((strcmp(dirp->d_name, ".") == 0) || (strcmp(dirp->d_name,"..") == 0))
+	       continue;
+
+//	  strcpy(ptr, dirp->d_name);
+	  walkpath(dirp->d_name);
+     }
+
+back3:
+     if (dp)
+	  closedir(dp);
+     chdir("..");
+     return;
+}
 int main(int argc, char *argv[])
 {
      int ret = 0;
@@ -142,7 +232,9 @@ int main(int argc, char *argv[])
 	  goto back;
      }
 //     printpath(argv[1]);
-
+     walkpath(argv[1]);
+//     chdir(argv[1]);
+     chdir("ftw");
      ret = myftw(argv[1], myfunc);
      ntot = nreg + ndir + nchr + nfifo + nslink + nsock;
      if (ntot == 0)
