@@ -159,4 +159,17 @@
     <string name="result_activity">Result Activity</string>
     <string name="viewcontact">View Contact</string>
     <string name="viewcontact_activity">ViewContact Activity</string>
+    <string name="link_text_auto"><b>text1:</b> This is some text.  In
+      this text are some things that are actionable.  For instance,
+      you can click on http://www.google.com and it will launch the
+      web browser, Or https://mail.google.com/, or rtsp://141.161.16.105:554/igp/isip4of5011306.mov
+      You can click on google.com too.
+      And, if you click on (415) 555-1212 it should dial the phone.
+    </string>
+    <string name="link_text_manual"><b>text2:</b> This is some other
+      text, with a <a href="http://www.google.com">link</a> specified
+      via an &lt;a&gt; tag.  Use a \"tel:\" URL
+      to <a href="tel:4155551212">dial a phone number</a>.
+    </string>
+    <string name="link_test_activity">Link Test Activity</string>
 </resources>
