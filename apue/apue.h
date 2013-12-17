@@ -13,6 +13,8 @@
 #include <malloc.h>
 #include <unistd.h>
 #include <errno.h>
+#include <unistd.h>
+#include <ctype.h>
 
 #define FILE_MODE (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
 #define RWRWRW (S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH)
