@@ -168,5 +168,13 @@
         </activity>
         <activity android:name="org.crazyandroid.launcher.ViewContactActivity"
             android:label="@string/viewcontact_activity"/>
+        <activity android:name="org.crazyandroid.basic.PropertyObserverActivity"
+            android:label="@string/propertyobserverActivity">
+        </activity>
+        <service android:name="org.crazyandroid.basic.PropertyNotifyService">
+            <intent-filter>
+                <action android:name="com.harman.ObserverPattern.NotifyService"/>
+            </intent-filter>
+        </service>
     </application>
 </manifest>

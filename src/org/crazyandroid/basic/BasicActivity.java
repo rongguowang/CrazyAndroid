@@ -108,5 +108,12 @@ public class BasicActivity extends Activity {
                 startActivity(intent);
             }
         });
+        Button mObserverButton = (Button)findViewById(R.id.propertyobserver_button);
+        mObserverButton.setOnClickListener(new OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(BasicActivity.this, PropertyObserverActivity.class);
+                startActivity(intent);
+        }
+        });
     }
 }

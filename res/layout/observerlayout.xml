@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/start_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/start_service" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/bind_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bind_service" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/stop_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stop_service" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/change_via_listener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_via_listener" />
+
+        <EditText
+            android:id="@+id/property1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/change_via_listener" >
+        </EditText>
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/change_via_intent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_via_intent" />
+
+        <EditText
+            android:id="@+id/property2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/change_via_intent" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/change_via_observable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_via_observable" />
+
+        <EditText
+            android:id="@+id/property3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/change_via_observable" />
+    </TableRow>
+
+</TableLayout>

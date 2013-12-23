@@ -172,4 +172,12 @@
       to <a href="tel:4155551212">dial a phone number</a>.
     </string>
     <string name="link_test_activity">Link Test Activity</string>
+    <string name="change_via_listener">Change Property1 Notify via Listener</string>
+    <string name="change_via_intent">Change Property2 Notify via Intent</string>
+    <string name="change_via_observable">Change Property3 Notify via Observable</string>
+    <string name="start_service">Start Service</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="propertyobserverActivity">PropertyObserverActivity</string>
+    <string name="propertyButton">PropertyObserver Activity</string>
 </resources>
