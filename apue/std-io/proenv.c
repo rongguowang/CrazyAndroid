@@ -3,6 +3,8 @@ extern char ** environ;
 
 #define BUFFSIZE 1024
 
+typedef void (*Exitfunc)(void);
+
 static void my_exit1()
 {
      printf("first exit handler!\n");
@@ -15,13 +17,16 @@ static void my_exit2()
 
 int exit_main()
 {
-     if (atexit(my_exit2) != 0)
+     Exitfunc exit_handler1 = &my_exit1;
+     Exitfunc exit_handler2 = &my_exit2;
+
+     if (atexit(exit_handler2) != 0)
      {
 	  printf("can't register my_exit2!\n");
 	  goto back;
      }
 
-     if (atexit(my_exit1) != 0)
+     if (atexit(exit_handler1) != 0)
      {
 	  printf("can't register my_exit1!\n");
 	  goto back;
@@ -74,11 +79,14 @@ int print_env()
 {
      char ** envPtr;
      int i;
+     long * longPtr;
+     long ** ptrArray;
+
      if (environ != NULL)
      {
 	  for (i = 0; environ[i] != NULL; i++)
 	  {
-//	       printf("%s\n", environ[i]);
+	    //	       printf("%s\n", environ[i]);
 	  }
 	  printf("enviroment varible count: %d\n", i);
 	  printf("PATH = %s\n", getenv("PATH"));
@@ -89,6 +97,15 @@ int print_env()
 	  printf("HOME = %s\n", getenv("HOME"));
 	  printf("argc = %s\n", getenv("argc"));
 	  printf("argv = %s\n", getenv("argv"));
+     }
+
+     longPtr = (long *)malloc(sizeof(long *) * 10);
+     ptrArray = (long **)malloc(sizeof(long **) * 10);
+
+     for ( i = 0; i < 10; i++)
+     {
+	  printf("long[%d] = %ld\t", i, longPtr[i]);
+	  printf("ptrArray[%d] = %ld\n", i, (long int)ptrArray[i]);
      }
 }
 int main(int argc, char *argv[])
