@@ -1,14 +1,14 @@
 #include "../apue.h"
 #include <dirent.h>
 
-int main(int argc, char * argv[])
+int ls_test(int argc, char * argv[])
 {
      DIR *dp;
      struct dirent *dirp;
 
      if (argc != 2)
      {
-	  printf("usage: ls directory_name"\n);
+	  printf("usage: ls directory_name\n");
 	  goto exit;
      }
 
@@ -21,4 +21,32 @@ int main(int argc, char * argv[])
      closedir(dp);
  exit:
      exit(0);
+}
+
+int func(int n, int *fp)
+{
+     int t, f;
+     if (n <= 1)
+     {
+	  *fp = 1;
+	  return 1;
+     }
+     t = func(n-1, fp);
+     f = t + *fp;
+     *fp = t;
+     printf("n = %d, *fp = %d, f = %d\n", n,*fp, f);
+     return f;
+}
+
+int iter_test(int argc, char ** argv)
+{
+     int x = 15;
+     printf("%d\n", func(4, &x));
+     return 0;
+}
+
+int main(int argc, char ** argv)
+{
+     //ls_test(argc, argv);
+     iter_test(argc, argv);
 }
