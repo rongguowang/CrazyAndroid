@@ -180,4 +180,5 @@
     <string name="stop_service">Stop Service</string>
     <string name="propertyobserverActivity">PropertyObserverActivity</string>
     <string name="propertyButton">PropertyObserver Activity</string>
+    <string name="inflater_activity">InflaterActivity</string>
 </resources>
