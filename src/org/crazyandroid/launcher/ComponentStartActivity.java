@@ -5,7 +5,10 @@ import org.crazyandroid.sample.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewStub;
 import android.view.View.OnClickListener;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -13,6 +16,7 @@ import android.content.Intent;
 public class ComponentStartActivity extends Activity {
     private Button button = null;
     private Button button2 = null;
+    private LinearLayout layout = null;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,5 +43,8 @@ public class ComponentStartActivity extends Activity {
                 startActivity(intent);
             }
         });
+        
+        ViewStub cell = (ViewStub)this.findViewById(R.id.view_stub2);
+        cell.setVisibility(View.VISIBLE);
     }
 }

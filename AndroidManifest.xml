@@ -19,7 +19,10 @@
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>>
+        </activity>
+        <activity android:name="LinkTestActivity"
+            android:label="@string/link_test_activity">            
+        </activity>
         <activity android:name="CodeViewActivity"
             android:label="@string/code_view_activity">
         </activity>
@@ -165,5 +168,15 @@
         </activity>
         <activity android:name="org.crazyandroid.launcher.ViewContactActivity"
             android:label="@string/viewcontact_activity"/>
+        <activity android:name="org.crazyandroid.basic.PropertyObserverActivity"
+            android:label="@string/propertyobserverActivity">
+        </activity>
+        <activity android:name="org.crazyandroid.launcher.InflaterActivity"
+            android:label="@string/inflater_activity"/>
+        <service android:name="org.crazyandroid.basic.PropertyNotifyService">
+            <intent-filter>
+                <action android:name="com.harman.ObserverPattern.NotifyService"/>
+            </intent-filter>
+        </service>
     </application>
 </manifest>

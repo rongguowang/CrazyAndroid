@@ -26,7 +26,7 @@ public class ResultActivity extends Activity{
         textview2 = (TextView)findViewById(R.id.textview2);
         StringBuffer sb2 = new StringBuffer();
         sb2.append(getIntent().getAction());
-        sb2.append("\n" + getIntent().getCategories().toString());
+//        sb2.append("\n" + getIntent().getCategories().toString());
         textview2.setText(sb2);
     }
 }

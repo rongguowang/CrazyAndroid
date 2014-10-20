@@ -23,8 +23,10 @@ public class CrazyAndroid extends Activity{
 		
 		bn.setOnClickListener(new OnClickListener() {
 			public void onClick(View v){
-				final TextView show = (TextView)findViewById(R.id.show);
-				show.setText("Hello Android~" + new java.util.Date());
+//				final TextView show = (TextView)findViewById(R.id.show);
+//				show.setText("Hello Android~" + new java.util.Date());
+				Intent intent = new Intent(CrazyAndroid.this, LinkTestActivity.class);
+				startActivity(intent);
 			}
 		});
 		
