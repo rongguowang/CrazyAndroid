@@ -15,6 +15,7 @@
 #include <errno.h>
 #include <unistd.h>
 #include <ctype.h>
+#include <sys/wait.h>
 
 #define FILE_MODE (S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)
 #define RWRWRW (S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH)
