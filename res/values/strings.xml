@@ -14,6 +14,7 @@
     <string name="generic_button">Generic Button</string>
     <string name="shrink_button">Shrink Button</string>
     <string name="stretch_button">Stretch Button</string>
+    <string name="launcher_open_button">Android Launcher</string>
     <string name="table_layout_button_text">Table Layout Button</string>
     <string name="table_layout_activity">TableLayoutActivity</string>
     <string name="frame_layout_button_text">Frame Layout Button</string>

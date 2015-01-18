@@ -84,6 +84,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/stretch_button"/>
+        <Button android:id="@+id/ok15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launcher_open_button"/>
     </TableRow>    
 </TableLayout>    
 
